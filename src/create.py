@@ -8,7 +8,7 @@ def create_node():
     if "CREATE" in k1 and "NODE" in k1 and len(k1) == 3:
         b = []
         for i in range(1):
-            r = str(input())
+            r = str(input("Индекс"))
             b.append(r)
         df = pd.Dataframe({}, indexes=b)
         with open("1.txt", "a+") as f:
