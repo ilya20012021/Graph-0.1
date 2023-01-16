@@ -22,7 +22,7 @@ def add_node():
                     x = str(input("Столбец:"))
                     col.append(x)
             else:
-                print("---------")
+                exit("---------")
 
             for i in col:
                 df[i] = [str(i) for i in input("Значения:").split()]
