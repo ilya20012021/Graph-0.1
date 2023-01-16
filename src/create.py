@@ -6,11 +6,7 @@ def create_node():
     print('Введите команду "CREATE NODE <filename>"')
     k1 = [str(i) for i in input().split()]
     if "CREATE" in k1 and "NODE" in k1 and len(k1) == 3:
-        b = []
-        for i in range(1):
-            r = str(input("Индекс:"))
-            b.append(r)
-        df = pd.Dataframe({}, indexes=b)
+        df = pd.Dataframe({})
         with open("1.txt", "a+") as f:
             f.write(f'{k1[2]}\n')
         df.to_csv(f"{k1[2]}.csv")
