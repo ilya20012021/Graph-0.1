@@ -15,8 +15,12 @@ def add_node():
         df = pd.read_csv(f"{k2[2]}.csv")  # пишу считывание данных для показа
         if len(df) == 0:
             col = []
-            val = [str(i) for i in input("Столбцы:").split()]
-            col.extend(val)
+            s = str(input("Кол-во столбцов:"))
+            if s.isdigit():
+                s = int(s)
+                for i in range(s):
+                    x = str(input("Столбец:"))
+                    col.append(x)
 
             for i in col:
                 df[i] = [str(i) for i in input("Значения:").split()]
