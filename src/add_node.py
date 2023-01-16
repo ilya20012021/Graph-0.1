@@ -21,6 +21,8 @@ def add_node():
                 for i in range(s):
                     x = str(input("Столбец:"))
                     col.append(x)
+            else:
+                print("---------")
 
             for i in col:
                 df[i] = [str(i) for i in input("Значения:").split()]
