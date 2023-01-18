@@ -2,3 +2,5 @@ m
 net
 n
 p
+i
+mirea

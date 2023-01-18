@@ -24,8 +24,16 @@ def add_node():
             else:
                 exit("---------")
 
+            s = str(input("Кол-во значений в столбце:"))
+
             for i in col:
-                df[i] = [str(i) for i in input("Значения:").split()]
+                o = []
+                if s.isdigit():
+                    n = int(s)
+                    for z in range(n):
+                        e = str(input("Введите значение:"))
+                        o.append(e)
+                df[i] = o
 
             df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
             df.to_csv(f"{k2[2]}.csv")
