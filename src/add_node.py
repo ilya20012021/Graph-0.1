@@ -27,13 +27,13 @@ def add_node():
             s = str(input("Кол-во значений в столбце:"))
 
             for i in col:
-                o = []
+                w = []
                 if s.isdigit():
                     n = int(s)
                     for z in range(n):
                         e = str(input("Введите значение:"))
-                        o.append(e)
-                df[i] = o
+                        w.append(e)
+                df[i] = w
 
             df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
             df.to_csv(f"{k2[2]}.csv")
