@@ -33,9 +33,10 @@ def add_node():
                     for z in range(n):
                         e = str(input("Введите значение:"))
                         w.append(e)
+                else:
+                   exit("-----------")
+
                 df[i] = w
-            else:
-                exit("-----------")
 
             df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
             df.to_csv(f"{k2[2]}.csv")
