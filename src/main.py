@@ -1,4 +1,5 @@
 import add_node
+import concatenation
 import create
 import delete
 import upd
@@ -6,7 +7,7 @@ import upd
 n = 1
 
 while n != 0:
-    m = ["Создать граф(нажмите 1)", "добавить ноды(нажмите 2)", "удалить ноды(нажмите 3)", "обновить ноды(нажмите 4)"]
+    m = ["Создать граф(нажмите 1)", "добавить ноды(нажмите 2)", "удалить ноды(нажмите 3)", "обновить ноды(нажмите 4)","склеивание таблиц(нажмите 5)"]
     for i in m:
         print(i)
 
@@ -19,6 +20,8 @@ while n != 0:
         delete.del_node()
     elif s == "4":
         upd.update_node()
+    elif s == "5":
+        concatenation.concate()
     else:
         print("???")
     ans = ["да", "нет"]

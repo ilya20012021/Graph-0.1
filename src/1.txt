@@ -9,3 +9,6 @@ ert
 s
 ty
 kl
+tests
+test1
+test10
