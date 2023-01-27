@@ -18,6 +18,8 @@ def concate():
         df3 = df3.loc[:, ~df3.columns.str.contains('^Unnamed')]
         name = str(input("Введите название графа:"))
         df3.to_csv(f"{name}.csv")
+        with open("1.txt", "a+") as f:
+            f.write(f'{name}\n')
         # конвертор таблицы в граф с экранированием и сохранением
         graph = Graph(name)
         graph.draw_graph()
