@@ -17,7 +17,7 @@ def nf1():
         name = str(input("Введите имя графа для сохранения:"))
         df1.to_csv(f"{name}.csv")
         with open("nf1.txt", "a+") as f:
-            f.write(f'{k5[2]}\n')
+            f.write(f'{name}\n')
         # конвертор таблицы в граф с экранированием и сохранением
         if len(df1) != 0:
             graph = Graph(name)

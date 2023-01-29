@@ -46,3 +46,4 @@ class Graph:
         self.add_edges_from_table()
         nx.draw(self.G, with_labels=True)
         plt.savefig(f"{self.filename}.png")
+        plt.close()

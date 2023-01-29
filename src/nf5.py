@@ -17,7 +17,8 @@ def nf5():
         k = list(df1.keys())
         e = str(input("Введите число для прогона:"))
         if e.isdigit():
-            for j in range(len(df1)):
+            for j in range(e):
+                e = int(e)
                 kl = str(input("Введите столбец для отнесения его к одной из таблиц:"))
                 if kl in k:
                     print("В какую таблицу относим? В первую или во вторую?")
