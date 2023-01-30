@@ -14,7 +14,7 @@ def join():
         # конвертация графа в таблицу
         df1 = pd.read_csv(f"{k5[2]}.csv")  # пишу считывание данных для показа
         df2 = pd.read_csv(f"{k5[3]}.csv")
-        how = ["inner","left","join"]
+        how = ["inner","left","right"]
         how1 = str(input("Введите вид объединения:"))
         cols = list(df2.keys())
         c = str(input("Введите имя столбца, по которому будет происходить объединение:"))
